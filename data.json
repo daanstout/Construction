@@ -1,0 +1,20 @@
+{
+    "$schema": "https://melvoridle.com/assets/schema/gameData.json",
+    "namespace": "nifeConstruction",
+    "data": {
+        "pages": [
+            {
+                "id": "Construction",
+                "media": "assets/saw.png",
+                "containerID": "construction-container",
+                "hasGameGuide": false,
+                "canBeDefault": true,
+                "headerBgClass": "bg-construction",
+                "skills": [
+                    "nifeConstruction:Construction"
+                ],
+                "skillSidebarCategoryID": "passives"
+            }
+        ]
+    }
+}

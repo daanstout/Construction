@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "ES2020",
+        "strict": true,
+        "skipLibCheck": true,
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "outDir": "./dist/build",
+        "removeComments": false,
+        "noEmitOnError": false,
+    },
+    "include": [
+        "data/**/*",
+        "src/**/*",
+        "node_modules/melvor-types/types/*"
+    ]
+}
