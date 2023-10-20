@@ -13,7 +13,20 @@
                 "skills": [
                     "nifeConstruction:Construction"
                 ],
-                "skillSidebarCategoryID": "passives"
+                "skillSidebarCategoryID": "Passive",
+                "customName": "Construction"
+            }
+        ],
+        "skillData": [
+            {
+                "skillID": "nifeConstruction:Construction",
+                "data": {
+                    "minibar": {
+                        "defaultItems": [],
+                        "upgrades": [],
+                        "pets": []
+                    }
+                }
             }
         ]
     }
