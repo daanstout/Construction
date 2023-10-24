@@ -1,12 +1,15 @@
-import { Room } from "./rooms";
+import { Room } from "./room";
 import { Feature } from "./feature";
 import { Section } from "./section";
 import { IConfigReader } from "../config/config-reader";
 
 export interface IBuildingLibrary {
     GetRoom(room: string): Room;
+    GetRooms(): IterableIterator<Room>;
     GetSection(section: string): Section;
+    GetSections(): IterableIterator<Section>;
     GetFeature(feature: string): Feature;
+    GetFeatures(): IterableIterator<Feature>;
 }
 
 export class BuildingLibrary implements IBuildingLibrary {
@@ -73,6 +76,18 @@ export class BuildingLibrary implements IBuildingLibrary {
 
     public GetFeature(feature: string): Feature {
         return this.Get<Feature>(feature, this.features, 'feature');
+    }
+
+    public GetRooms(): IterableIterator<Room> {
+        return this.rooms.values();
+    }
+
+    public GetSections(): IterableIterator<Section> {
+        return this.sections.values();
+    }
+
+    public GetFeatures(): IterableIterator<Feature> {
+        return this.features.values();
     }
 
     private Get<T>(name: string, map: ReadonlyMap<string, T>, typeName: string): T {

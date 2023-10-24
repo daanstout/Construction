@@ -1,0 +1,16 @@
+<template id="nife-construction-section">
+    <div class="col-12 section-hidden">
+        <div class="block block-content block-content-full block-rounded-extra block-link-pop border-top border-music border-4x text-center">
+            <div class="row">
+                <div class="col-12 p-2">
+                    <h4 class="font-w700 mb-2">{{ getLangString(sectionDisplayKey) }}</h4>
+                </div>
+                <div class="col-12 p-2">
+                    <div class="row row-deck">
+                        <div class="col-12" v-bind:id="`${sectionDisplayKey}-features-container`"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

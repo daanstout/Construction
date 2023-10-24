@@ -1,0 +1,17 @@
+<template id="nife-construction-room">
+    <div class="col-12">
+        <div class="block block-content block-content-full block-rounded-extra block-link-pop border-top border-music border-4x text-center">
+            <div class="row">
+                <div class="col-12 pt-2">
+                    <h4 class="font-w700 mb-2">{{ getLangString(roomDisplayKey) }}</h4>
+                </div>
+                <div class="col-12" v-bind:id="`${roomDisplayKey}-build-cost-container`"></div>
+                <div class="col-12 p-2">
+                    <button class="btn btn-alt-success ml-3 mr-3 mb-3 mt-1" @click="onView()">
+                        {{ getLangString('View_Room') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

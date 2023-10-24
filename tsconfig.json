@@ -13,6 +13,6 @@
     "include": [
         "data/**/*",
         "src/**/*",
-        "node_modules/melvor-types/types/*"
+        "node_modules/melvor-typing-project/src/**/*"
     ]
 }
